@@ -78,6 +78,10 @@ INSERT INTO Emp (Emp_Id, Emp_name, Emp_Dept_Id, Emp_boss_id, Emp_salary) VALUES
 
 > Advanced Query: Employees earning more than their boss
 
+SELECT e.Emp_Id, e.Emp_name, e.Emp_salary, b.Emp_name AS Boss_Name, b.Emp_salary AS Boss_Salary
+FROM Emp e
+JOIN Emp b ON e.Emp_boss_id = b.Emp_Id
+WHERE e.Emp_salary > b.Emp_salary;
 
 
 
