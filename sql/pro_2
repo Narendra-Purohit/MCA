@@ -87,3 +87,12 @@ WHERE pno = 'P02';
 UPDATE sp
 SET qty = 180
 WHERE sno = 'S01' AND pno = 'P02';
+
+-- Delete one supplier
+DELETE FROM s
+WHERE sno = 'S05';   -- Deletes supplier S05 and its related shipments in sp
+
+-- Delete one part
+DELETE FROM p
+WHERE pno = 'P04';   -- Deletes part P04 and its related shipments in sp
+
