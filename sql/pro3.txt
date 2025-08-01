@@ -53,7 +53,7 @@ CREATE TABLE Emp (
 1.Insert Data into Dept Table (At least 3 departments)
 
 INSERT INTO Dept (Dept_Id, Dept_name, Dept_location) VALUES (1, 'IT', 'Ahmedabad');
-INSERT INTO Dept (Dept_Id, Dept_name, Dept_location) VALUES (2, 'HR', 'Mumbai');
+INSERT INTO Dept (Dept_Id, Dept_name, Dept_location) VALUES (2, 'HR', 'Surat');
 INSERT INTO Dept (Dept_Id, Dept_name, Dept_location) VALUES (3, 'Finance', 'Delhi');
 
 2. Insert Employees
@@ -61,7 +61,7 @@ INSERT INTO Dept (Dept_Id, Dept_name, Dept_location) VALUES (3, 'Finance', 'Delh
 -- IT Department Employees
 INSERT INTO Emp (Emp_Id, Emp_name, Emp_Dept_Id, Emp_boss_id, Emp_salary) VALUES
 (101, 'Anil', 1, NULL, 80000),   -- Dept Head (no boss)
-(102, 'Vijay', 1, 101, 60000),
+(102, 'Vijay', 1, 101, 40000),
 (103, 'Rita', 1, 101, 85000);    -- Rita earns more than boss Anil (for special condition)
 
 -- HR Department Employees
