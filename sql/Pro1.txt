@@ -1,0 +1,49 @@
+Create a database with the name MCA or MScIT, followed by your student number (e.g., MCA230456789 or MScIT230456789).
+Inside this database, create a table named account with the following fields:
+acc_no (Integer)
+amount (Decimal – up to 10 digits, with 2 decimal places)
+After creating the table:
+Insert at least 10 records into the account table.
+Use the UPDATE statement to change the amount of one or more records.
+Use the DELETE statement to remove any two records from the table.
+Objective: To learn how to:
+Create a database and table.
+Insert multiple records.
+Update specific data.
+Delete selected records.
+
+
+==> Step 1: Create a new database
+CREATE DATABASE MCA230456789;
+
+-- Step 2: Use the database
+USE MCA230456789;
+
+-- Step 3: Create the 'account' table
+CREATE TABLE account (
+    acc_no INT PRIMARY KEY,
+    amount DECIMAL(10, 2)
+);
+
+-- Step 4: Insert 10 records into the account table
+INSERT INTO account (acc_no, amount) VALUES (1001, 2500.50);
+INSERT INTO account (acc_no, amount) VALUES (1002, 3400.00);
+INSERT INTO account (acc_no, amount) VALUES (1003, 1500.75);
+INSERT INTO account (acc_no, amount) VALUES (1004, 8900.10);
+INSERT INTO account (acc_no, amount) VALUES (1005, 1200.00);
+INSERT INTO account (acc_no, amount) VALUES (1006, 7500.00);
+INSERT INTO account (acc_no, amount) VALUES (1007, 5000.99);
+INSERT INTO account (acc_no, amount) VALUES (1008, 999.99);
+INSERT INTO account (acc_no, amount) VALUES (1009, 6000.10);
+INSERT INTO account (acc_no, amount) VALUES (1010, 3333.33);
+
+-- Step 5: Update amount for specific accounts
+UPDATE account SET amount = 9999.99 WHERE acc_no = 1003;
+UPDATE account SET amount = 0.00 WHERE acc_no = 1008;
+
+-- Step 6: Delete two specific records
+DELETE FROM account WHERE acc_no = 1005;
+DELETE FROM account WHERE acc_no = 1009;
+
+-- Optional: View the remaining data
+SELECT * FROM account;

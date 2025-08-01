@@ -1,0 +1,49 @@
+3.Creating multiple tables with primary keys and performing data oparatoins.
+ 
+Problem Definition:
+
+you are required to create the following three related tables in sql:
+
+http
+
+1. Supplier table (s)
+
+colum name  Data types   Description
+sno         CHAR(3)      Supplier - primary key 
+sname       VARCHAR(50)  Supplier - name
+s_satus      INT         Status  of the supplier (e-g. 10= new, 20=Active, 30=Trusted)
+s_city      VARCHAR(25)  City of the Supplier
+
+Note: s_staus is a numeric value indicating the reliability or activity level of the supplier.
+
+2. Part table (p)
+
+colum name  Data types   Description
+pno         CHAR(3)      Part number - primary key
+pname       VARCHAR(20)      name of part
+color       VARCHAR(10)      color of part
+weight      FLOAT(5,2)       weight of part
+p_city      VARCHAR(25)      City where part is available
+
+
+3. shipment table (sp)
+
+colum name  Data types   Description
+sno         CHAR(3)      Supplier number - Part of Composite Primary key 
+pno         CHAR(3)      Part number - part of Composite primary key 
+qty	    INT          Quantity supplier
+
+Note: The combination of sno and pno forms the primary key in the sp table.
+
+Tasks to perform:
+
+1. create all three tables (s,p,and sp) with the appropriate primary keys.
+2. Insert a minimum of:
+3. 5 records in the supplier (s) table.
+4. 5 records in the part (P) table.
+5. corresponding shipment (sp) records for supplier-part combination 
+6. use the update statement to modify one or more values in each table 
+7. use the delete statement to remove:
+   1 record from the s (supplier) table.
+   1 record from the p (part) table.
+   
