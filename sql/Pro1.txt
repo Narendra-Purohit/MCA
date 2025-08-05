@@ -14,10 +14,10 @@ Delete selected records.
 
 
 ==> Step 1: Create a new database
-CREATE DATABASE MCA230456789;
+CREATE DATABASE MCA;
 
 -- Step 2: Use the database
-USE MCA230456789;
+USE MCA;
 
 -- Step 3: Create the 'account' table
 CREATE TABLE account (
@@ -26,24 +26,25 @@ CREATE TABLE account (
 );
 
 -- Step 4: Insert 10 records into the account table
-INSERT INTO account (acc_no, amount) VALUES (1001, 2500.50);
-INSERT INTO account (acc_no, amount) VALUES (1002, 3400.00);
-INSERT INTO account (acc_no, amount) VALUES (1003, 1500.75);
-INSERT INTO account (acc_no, amount) VALUES (1004, 8900.10);
-INSERT INTO account (acc_no, amount) VALUES (1005, 1200.00);
-INSERT INTO account (acc_no, amount) VALUES (1006, 7500.00);
-INSERT INTO account (acc_no, amount) VALUES (1007, 5000.99);
-INSERT INTO account (acc_no, amount) VALUES (1008, 999.99);
-INSERT INTO account (acc_no, amount) VALUES (1009, 6000.10);
-INSERT INTO account (acc_no, amount) VALUES (1010, 3333.33);
+INSERT INTO account (acc_no, amount) VALUES (1020304011, 5000);
+INSERT INTO account (acc_no, amount) VALUES (1020304012, 10000);
+INSERT INTO account (acc_no, amount) VALUES (1020304013, 15000);
+INSERT INTO account (acc_no, amount) VALUES (1020304014, 20000);
+INSERT INTO account (acc_no, amount) VALUES (1020304015, 25000);
+INSERT INTO account (acc_no, amount) VALUES (1020304016, 30000);
+INSERT INTO account (acc_no, amount) VALUES (1020304017, 35000);
+INSERT INTO account (acc_no, amount) VALUES (1020304018, 40000);
+INSERT INTO account (acc_no, amount) VALUES (1020304019, 45000);
+INSERT INTO account (acc_no, amount) VALUES (1020304020, 50000);
 
 -- Step 5: Update amount for specific accounts
-UPDATE account SET amount = 9999.99 WHERE acc_no = 1003;
-UPDATE account SET amount = 0.00 WHERE acc_no = 1008;
+UPDATE account SET amount = 9999.00 WHERE acc_no = 1020304013;
+UPDATE account SET amount = 0.00 WHERE acc_no = 1020304018;
 
 -- Step 6: Delete two specific records
-DELETE FROM account WHERE acc_no = 1005;
-DELETE FROM account WHERE acc_no = 1009;
+DELETE FROM account WHERE acc_no = 1020304015;
+DELETE FROM account WHERE acc_no = 1020304019;
 
 -- Optional: View the remaining data
 SELECT * FROM account;
+
