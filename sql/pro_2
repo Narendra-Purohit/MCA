@@ -19,9 +19,18 @@ pno char (3)
 qty  int 
 sno & pno combination is pk )
 
-After creating above table s insert minimum 5 supplier table s records. also insert also minimum 5 parts table p records.
-then corresponding shipment table sp records also insert as per requirement. after that use Update statement for changing value 
-in record also one delete statement for deleting one record in s table and one record from p table.
+Tasks to Perform:
+1. Create all three tables (s, p, and sp) with the appropriate primary keys.
+2. Insert a minimum of:
+3. 5 records in the Supplier (s) table.
+3. 5 records in the Part (p) table.
+4. Corresponding Shipment (sp) records for supplier-part combinations.
+5. Use the UPDATE statement to modify one or more values in each table.
+6. Use the DELETE statement to remove:
+- 1 record from the s (Supplier) table.
+- 1 record from the p (Part) table.
+Learning Objectives:
+Understand how to define and use Primary Keys and Composite Keys
 
 ==>
 -- Supplier Table
